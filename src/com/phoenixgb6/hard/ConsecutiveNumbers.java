@@ -22,8 +22,8 @@ public class ConsecutiveNumbers {
         if (numbers.length == 2) return Math.abs(numbers[0] - numbers[1]) == 1;
 
         int minNum = findMin();
-        int maxNum = findMax();
         int minAndMaxSum;
+        int maxNum = findMax();
         int othersSum = 0;
 
         //length of the array minus the max and min.
