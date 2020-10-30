@@ -14,7 +14,7 @@ public class ReverseLEGOYoda {
 
     public static String reverseLegoYoda(String text) {
         String[] sentences = text.split("\\. ");
-        String completeSentence = "";
+        StringBuilder completeSentence = new StringBuilder();
 
         for (String sentence : sentences){
             String[] tempSentence = sentence.split(", ");
@@ -24,14 +24,14 @@ public class ReverseLEGOYoda {
             if (tempSentence[1].charAt(tempSentence[1].length()-1) == '.')
                 tempSentence[1] = tempSentence[1].substring(0, tempSentence[1].length()-1);
 
-            completeSentence += tempSentence[1] + " " + tempSentence[0] + ".";
+            completeSentence.append(tempSentence[1]).append(" ").append(tempSentence[0]).append(".");
 
-            if (sentences.length > 1) completeSentence += " ";
+            if (sentences.length > 1) completeSentence.append(" ");
         }
 
         if (completeSentence.charAt(completeSentence.length()-1) == ' ')
-            completeSentence = completeSentence.substring(0, completeSentence.length()-1);
+            completeSentence = new StringBuilder(completeSentence.substring(0, completeSentence.length() - 1));
 
-        return completeSentence;
+        return completeSentence.toString();
     }
 }
