@@ -14,7 +14,6 @@ public class DigitsSumRoot {
         System.out.println(digitRoot(999888777));
         System.out.println(digitRoot(1799877799877998777L));
         System.out.println(digitRoot(9876546839792379L));
-
     }
 
     public static int digitRoot(long n) {
