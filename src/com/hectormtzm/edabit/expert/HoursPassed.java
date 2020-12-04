@@ -1,4 +1,4 @@
-package com.phoenixgb6.expert;
+package com.hectormtzm.edabit.expert;
 
 /*
  https://edabit.com/challenge/D33ry6zNZzRyuQRPF

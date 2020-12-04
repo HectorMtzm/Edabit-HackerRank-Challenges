@@ -1,4 +1,4 @@
-package com.phoenixgb6.very_hard;
+package com.hectormtzm.edabit.very_hard;
 
 /*
 Function that returns which chapter is nearest to the page you're on. If two chapters are equidistant, return the chapter with the higher page number.

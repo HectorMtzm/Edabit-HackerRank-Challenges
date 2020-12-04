@@ -1,4 +1,4 @@
-package com.phoenixgb6.very_hard;
+package com.hectormtzm.edabit.very_hard;
 
 /*
 https://edabit.com/challenge/9P6yDuSZxYTihMtT6

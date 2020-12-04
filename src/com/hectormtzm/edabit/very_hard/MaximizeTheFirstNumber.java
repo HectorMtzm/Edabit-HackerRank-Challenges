@@ -1,4 +1,4 @@
-package com.phoenixgb6.very_hard;
+package com.hectormtzm.edabit.very_hard;
 
 /*
 Function that makes the first number as large as possible by swapping out its digits for digits in the second number.

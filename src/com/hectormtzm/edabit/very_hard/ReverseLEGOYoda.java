@@ -1,4 +1,4 @@
-package com.phoenixgb6.very_hard;
+package com.hectormtzm.edabit.very_hard;
 
 /*
 function that takes a string with at least one sentence in it and returns a string with the part(s) after the comma at the beginning of the sentence(s).
