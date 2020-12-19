@@ -2,9 +2,8 @@ package com.hectormtzm.hackerrank.medium;
 
 /*
 https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays&h_r=next-challenge&h_v=zen
+HM
  */
-
-import java.util.Arrays;
 
 public class MinimumSwaps2 {
 
@@ -14,13 +13,16 @@ public class MinimumSwaps2 {
 
     static int minimumSwaps(int[] arr) {
         int swaps = 0;
+        int correctIndex;
+        int temp;
 
         for (int i = 0, v = 1; i < arr.length; i++, v++){
+            correctIndex = findCorrectIndex(arr, v);
+            temp = arr[i];
+
             if (arr[i] != v){
-                int correctIndexValue = findCorrectIndex(arr, v);
-                int temp = arr[i];
-                arr[i] = arr[correctIndexValue];
-                arr[correctIndexValue] = temp;
+                arr[i] = arr[correctIndex];
+                arr[correctIndex] = temp;
                 swaps++;
             }
         }
@@ -29,7 +31,7 @@ public class MinimumSwaps2 {
     }
 
     private static int findCorrectIndex(int[] arr, int v) {
-        for (int i =0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++){
             if (arr[i] == v){
                 return i;
             }

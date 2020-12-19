@@ -43,7 +43,7 @@ public class NewYearChaos {
             }
         }
 
-        System.out.println(chaotic ? "Too chaotic" : Arrays.stream(individualBribes).reduce( (a,b) -> a+=b).getAsInt());
+        System.out.println(chaotic ? "Too chaotic" : Arrays.stream(individualBribes).sum());
     }
 
 }
